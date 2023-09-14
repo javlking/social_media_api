@@ -2,6 +2,9 @@ from fastapi import APIRouter
 
 from comments import CommentModel, EditCommentModel
 
+from database.commentservice import change_comment_db, add_comment_db, delete_comment_db, get_post_comments
+
+
 # Создать компонент
 comment_router = APIRouter(prefix='/comment', tags=['Работа с комментариями'])
 
